@@ -223,9 +223,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `©BOT ツˣᴿᶻズガx`.trim(),
+                        "description": `© Tegar X Babun`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
-                        "buttonText": "*Click Here*",
+                        "buttonText": "*PENCET TOD*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -365,7 +365,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik ツˣᴿᶻズガx",
+                                    "description": "pemilik Tegar",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
@@ -493,18 +493,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari🌃"
+  res = "Selamat dinihari Tod 🌃"
   if (time >= 4) {
-    res = "Selamat pagi🌄"
+    res = "Selamat pagi Tod 🌄"
   }
   if (time > 10) {
-    res = "Selamat siang🌄"
+    res = "Selamat siang Tod 🌄"
   }
   if (time >= 15) {
-    res = "Selamat sore🌇"
+    res = "Selamat sore Tod 🌇"
   }
   if (time >= 18) {
-    res = "Selamat malam🌉"
+    res = "Selamat malam Tod 🌉"
   }
   return res
 }
